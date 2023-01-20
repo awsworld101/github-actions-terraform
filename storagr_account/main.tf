@@ -1,3 +1,13 @@
+terraform {
+   backend "azurerm" {
+   resource_group_name = "Terraformmmrrm"
+   storage-account_name = "srtgfggsaadd"
+   container_name = "tfstate"
+   key = " dev.terraform.tfstate"
+
+   }
+   }
+
 resource "azurerm_resource_group" "strg" {
   name     = var.rg_name
   location = var.loc
